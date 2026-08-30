@@ -1,0 +1,22 @@
+[project]
+name = "ai-huggingface-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "developerbayazid", email = "bayazid.freelancer@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "huggingface-hub>=1.29.0",
+    "torch>=2.13.0",
+    "transformers>=5.16.1",
+]
+
+[project.scripts]
+ai-huggingface-fastapi = "ai_huggingface_fastapi:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
